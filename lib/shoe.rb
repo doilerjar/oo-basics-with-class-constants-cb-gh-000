@@ -5,7 +5,7 @@ class Shoe
   BRANDS = []
   
   def initialize(brand)
-    BRANDS << brand.uniq
+    @brand = brand
   end
 
   def cobble
@@ -13,4 +13,6 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
+  def new(brand)
+    BRANDS << brand unless BRANDS.include(brand)
 end
