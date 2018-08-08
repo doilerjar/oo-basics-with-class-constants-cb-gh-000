@@ -15,4 +15,5 @@ class Shoe
 
   def new(brand)
     BRANDS << brand unless BRANDS.include(brand)
+  end 
 end
